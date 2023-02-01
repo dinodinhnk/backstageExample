@@ -4,5 +4,3 @@ metadata:
   name: Test-service
 spec:
   targets:
-    - ./component.yaml
-    - ./asyncapi.yaml
