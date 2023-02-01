@@ -1,11 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: test-service
+  name: Test-service
 spec:
-  type: service
-  lifecycle: production
-  owner: loanservices-developers
-  providesApis:
-    - payments-service-openapi
-    - payments-service-asyncapi
+  targets:
+    - ./component.yaml
+    - ./asyncapi.yaml
