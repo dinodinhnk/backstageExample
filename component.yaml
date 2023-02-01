@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payments-service
+  annotations:
+    github.com/project-slug: HappyMoneyInc/payments-service
+    backstage.io/techdocs-ref: dir:..
+    jira/project-key: AV
+    sonarqube.org/project-key: HappyMoneyInc_payments-service
+  links:
+    - url: https://github.com/HappyMoneyInc/payments-service
+      title: GitHub
+      icon: github
+    - url: https://app.datadoghq.com/apm/service/payments-service-green
+      title: DataDog Dashboard
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: loanservices-developers
+  providesApis:
+    - payments-service-openapi
+    - payments-service-asyncapi
